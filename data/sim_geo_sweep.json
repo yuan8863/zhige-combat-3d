@@ -1,0 +1,2583 @@
+{
+ "meta": {
+  "note": "3D 几何维度扫描结果（部分扫描在写入时仍在运行；本文件合并了已完成的分片）",
+  "merged_from": [
+   "_geo_part5.json",
+   "_geo_part2.json",
+   "_geo_part1.json"
+  ],
+  "geo_base": {
+   "halfArc_deg": 60,
+   "angleFalloff": 0.35,
+   "backstabMul": 1,
+   "turnIdle": 0.1,
+   "turnAttack": 0.03,
+   "dodgeDirs": 2
+  },
+  "note_base": "mode=1d 的格子 = 2D 一维原版路径（逐位复现 combat_balance_sim.py）",
+  "scans_available": [
+   "close",
+   "s2",
+   "base",
+   "s1"
+  ]
+ },
+ "scans": {
+  "close": {
+   "scan": "close",
+   "n": 500,
+   "seed": 20260930,
+   "level": "normal",
+   "cells": [
+    {
+     "n_per_cell": 500,
+     "games": 6000,
+     "mean_win_rate": 0.4588333333333333,
+     "mean_win_rate_dec": 0.4594464878893026,
+     "spread_pp": 4.399999999999999,
+     "ttk_dec_s": 19.013378949710727,
+     "ttk_all_s": 19.021091666666667,
+     "draw_rate": 0.0013333333333333333,
+     "avg_hero": {
+      "zhirui": {
+       "name": "执锐",
+       "win_rate": 0.42933333333333334,
+       "win_rate_dec": 0.4295591182364729
+      },
+      "zhongfeng": {
+       "name": "重锋",
+       "win_rate": 0.47333333333333333,
+       "win_rate_dec": 0.47365263861055446
+      },
+      "yingsuo": {
+       "name": "影梭",
+       "win_rate": 0.4706666666666666,
+       "win_rate_dec": 0.47225622543830587
+      },
+      "changce": {
+       "name": "长策",
+       "win_rate": 0.46199999999999997,
+       "win_rate_dec": 0.46231796927187707
+      }
+     },
+     "pairs": {
+      "zhirui>zhongfeng": {
+       "win_rate": 0.516,
+       "win_rate_dec": 0.516,
+       "draw_rate": 0,
+       "ttk_dec_s": 18.719299999999997,
+       "ttk_all_s": 18.719299999999997
+      },
+      "zhirui>yingsuo": {
+       "win_rate": 0.434,
+       "win_rate_dec": 0.434,
+       "draw_rate": 0,
+       "ttk_dec_s": 19.940333333333335,
+       "ttk_all_s": 19.940333333333335
+      },
+      "zhirui>changce": {
+       "win_rate": 0.338,
+       "win_rate_dec": 0.33867735470941884,
+       "draw_rate": 0.0020000000000000018,
+       "ttk_dec_s": 19.74883099532398,
+       "ttk_all_s": 19.709333333333333
+      },
+      "zhongfeng>zhirui": {
+       "win_rate": 0.442,
+       "win_rate_dec": 0.442,
+       "draw_rate": 0,
+       "ttk_dec_s": 19.041,
+       "ttk_all_s": 19.041
+      },
+      "zhongfeng>yingsuo": {
+       "win_rate": 0.5,
+       "win_rate_dec": 0.5,
+       "draw_rate": 0,
+       "ttk_dec_s": 18.875566666666668,
+       "ttk_all_s": 18.875566666666668
+      },
+      "zhongfeng>changce": {
+       "win_rate": 0.478,
+       "win_rate_dec": 0.4789579158316633,
+       "draw_rate": 0.0020000000000000018,
+       "ttk_dec_s": 18.483667334669338,
+       "ttk_all_s": 18.4467
+      },
+      "yingsuo>zhirui": {
+       "win_rate": 0.464,
+       "win_rate_dec": 0.46680080482897385,
+       "draw_rate": 0.006000000000000005,
+       "ttk_dec_s": 20.628101945003355,
+       "ttk_all_s": 20.50433333333333
+      },
+      "yingsuo>zhongfeng": {
+       "win_rate": 0.49,
+       "win_rate_dec": 0.4919678714859438,
+       "draw_rate": 0.0040000000000000036,
+       "ttk_dec_s": 19.31599732262383,
+       "ttk_all_s": 19.238733333333336
+      },
+      "yingsuo>changce": {
+       "win_rate": 0.458,
+       "win_rate_dec": 0.458,
+       "draw_rate": 0,
+       "ttk_dec_s": 19.764466666666667,
+       "ttk_all_s": 19.764466666666667
+      },
+      "changce>zhirui": {
+       "win_rate": 0.476,
+       "win_rate_dec": 0.47695390781563124,
+       "draw_rate": 0.0020000000000000018,
+       "ttk_dec_s": 18.841816967267867,
+       "ttk_all_s": 18.804133333333333
+      },
+      "changce>zhongfeng": {
+       "win_rate": 0.484,
+       "win_rate_dec": 0.484,
+       "draw_rate": 0,
+       "ttk_dec_s": 17.05483333333333,
+       "ttk_all_s": 17.05483333333333
+      },
+      "changce>yingsuo": {
+       "win_rate": 0.426,
+       "win_rate_dec": 0.426,
+       "draw_rate": 0,
+       "ttk_dec_s": 18.154366666666665,
+       "ttk_all_s": 18.154366666666665
+      }
+     },
+     "metrics": {
+      "atk_inst": 167661,
+      "contacts": 161899,
+      "whiff_rate": 0.07411980126564914,
+      "whiff_dodge_rate": 0.020487769964392433,
+      "contact_rate": 0.9656330333231938,
+      "edge_rate": 0,
+      "rear_share": 0,
+      "rear_inst": 0,
+      "rear_conv": null,
+      "backstab_hits": 0,
+      "arc_backstab": 0,
+      "mean_angle_deg": 0,
+      "close_frame_share": 0.119732583405585,
+      "close_atk_inst": 23937,
+      "close_contact_rate": 0.962986172034925,
+      "dodge_used": 129,
+      "dodge_evade": 3435,
+      "hits": 133743,
+      "blocks": 14597,
+      "parries": 9638,
+      "breaks": 12285,
+      "execs": 3300,
+      "skills": 39826
+     },
+     "agg": {
+      "hits": 133743,
+      "blocks": 14597,
+      "dodges": 3435,
+      "parries": 9638,
+      "breaks": 12285,
+      "execs": 3300,
+      "ults": 1670,
+      "whiffs": 0,
+      "counters": 621,
+      "skills": 39826,
+      "a_dmg": 5880975.554519999,
+      "b_dmg": 6234964.524639999,
+      "frames": 6847593,
+      "close_frames": 819880,
+      "atk_inst": 167661,
+      "whiff_geo": 12427,
+      "whiff_dodge": 3435,
+      "contacts": 161899,
+      "edge_hits": 0,
+      "rear_contacts": 0,
+      "ang_sum": 0,
+      "rear_inst": 0,
+      "rear_inst_hit": 0,
+      "close_contacts": 23051,
+      "close_atk_inst": 23937,
+      "dodge_used": 129,
+      "backstab_hits": 0,
+      "first_close": 4554,
+      "first_dist": 373038.6971666664
+     },
+     "first": {
+      "close_n": 4554,
+      "far_n": 1446,
+      "close_share": 0.759,
+      "close_win_rate": 0.5393061045234958,
+      "far_win_rate": 0.5573997233748271
+     },
+     "label": "1D 贴身开局 56px",
+     "geo": {
+      "mode": "1d",
+      "halfArc_deg": 60,
+      "angleFalloff": 0.35,
+      "backstabMul": 1,
+      "backstabRef": "rear",
+      "turnIdle": 0.1,
+      "turnAttack": 0.03,
+      "turnDodge": 0,
+      "dodgeDirs": 2
+     },
+     "start_gap": 56,
+     "seconds": 56.7
+    },
+    {
+     "n_per_cell": 500,
+     "games": 6000,
+     "mean_win_rate": 0.5291666666666667,
+     "mean_win_rate_dec": 0.5685376004413424,
+     "spread_pp": 44.86666666666667,
+     "ttk_dec_s": 22.374551304758533,
+     "ttk_all_s": 35.00096666666666,
+     "draw_rate": 0.059,
+     "avg_hero": {
+      "zhirui": {
+       "name": "执锐",
+       "win_rate": 0.41333333333333333,
+       "win_rate_dec": 0.4236250585995829
+      },
+      "zhongfeng": {
+       "name": "重锋",
+       "win_rate": 0.42,
+       "win_rate_dec": 0.43951773327670624
+      },
+      "yingsuo": {
+       "name": "影梭",
+       "win_rate": 0.42133333333333334,
+       "win_rate_dec": 0.42985404271428646
+      },
+      "changce": {
+       "name": "长策",
+       "win_rate": 0.862,
+       "win_rate_dec": 0.9811535671747939
+      }
+     },
+     "pairs": {
+      "zhirui>zhongfeng": {
+       "win_rate": 0.532,
+       "win_rate_dec": 0.5373737373737374,
+       "draw_rate": 0.010000000000000009,
+       "ttk_dec_s": 21.557744107744107,
+       "ttk_all_s": 21.342166666666667
+      },
+      "zhirui>yingsuo": {
+       "win_rate": 0.448,
+       "win_rate_dec": 0.45807770961145194,
+       "draw_rate": 0.02200000000000002,
+       "ttk_dec_s": 26.340763462849353,
+       "ttk_all_s": 25.761266666666664
+      },
+      "zhirui>changce": {
+       "win_rate": 0.26,
+       "win_rate_dec": 0.2754237288135593,
+       "draw_rate": 0.05600000000000005,
+       "ttk_dec_s": 38.84851694915254,
+       "ttk_all_s": 36.673
+      },
+      "zhongfeng>zhirui": {
+       "win_rate": 0.458,
+       "win_rate_dec": 0.4663951120162933,
+       "draw_rate": 0.018000000000000016,
+       "ttk_dec_s": 22.9897827562797,
+       "ttk_all_s": 22.575966666666666
+      },
+      "zhongfeng>yingsuo": {
+       "win_rate": 0.586,
+       "win_rate_dec": 0.6004098360655737,
+       "draw_rate": 0.02400000000000002,
+       "ttk_dec_s": 26.69023224043716,
+       "ttk_all_s": 26.049666666666667
+      },
+      "zhongfeng>changce": {
+       "win_rate": 0.216,
+       "win_rate_dec": 0.2517482517482518,
+       "draw_rate": 0.14200000000000002,
+       "ttk_dec_s": 63.6562937062937,
+       "ttk_all_s": 54.6171
+      },
+      "yingsuo>zhirui": {
+       "win_rate": 0.512,
+       "win_rate_dec": 0.5161290322580645,
+       "draw_rate": 0.008000000000000007,
+       "ttk_dec_s": 22.40255376344086,
+       "ttk_all_s": 22.223333333333336
+      },
+      "yingsuo>zhongfeng": {
+       "win_rate": 0.464,
+       "win_rate_dec": 0.46963562753036436,
+       "draw_rate": 0.01200000000000001,
+       "ttk_dec_s": 22.798043184885287,
+       "ttk_all_s": 22.52446666666667
+      },
+      "yingsuo>changce": {
+       "win_rate": 0.288,
+       "win_rate_dec": 0.3037974683544304,
+       "draw_rate": 0.052000000000000046,
+       "ttk_dec_s": 38.86135724331927,
+       "ttk_all_s": 36.84056666666667
+      },
+      "changce>zhirui": {
+       "win_rate": 0.872,
+       "win_rate_dec": 0.9797752808988764,
+       "draw_rate": 0.10999999999999999,
+       "ttk_dec_s": 53.89951310861423,
+       "ttk_all_s": 47.97056666666666
+      },
+      "changce>zhongfeng": {
+       "win_rate": 0.858,
+       "win_rate_dec": 0.9953596287703016,
+       "draw_rate": 0.138,
+       "ttk_dec_s": 60.23781902552204,
+       "ttk_all_s": 51.925
+      },
+      "changce>yingsuo": {
+       "win_rate": 0.856,
+       "win_rate_dec": 0.9683257918552036,
+       "draw_rate": 0.11599999999999999,
+       "ttk_dec_s": 58.26753393665158,
+       "ttk_all_s": 51.508500000000005
+      }
+     },
+     "metrics": {
+      "atk_inst": 165414,
+      "contacts": 148402,
+      "whiff_rate": 0.1560266966520367,
+      "whiff_dodge_rate": 0.01588740977184519,
+      "contact_rate": 0.8971550171085881,
+      "edge_rate": 0.00032344577566340076,
+      "rear_share": 0,
+      "rear_inst": 24,
+      "rear_conv": 0.041666666666666664,
+      "backstab_hits": 0,
+      "arc_backstab": 0,
+      "mean_angle_deg": 0.7185968504093942,
+      "close_frame_share": 0.15341369936766827,
+      "close_atk_inst": 52832,
+      "close_contact_rate": 0.927771047849788,
+      "dodge_used": 87,
+      "dodge_evade": 2628,
+      "hits": 127151,
+      "blocks": 10607,
+      "parries": 7064,
+      "breaks": 9453,
+      "execs": 2534,
+      "skills": 59905
+     },
+     "agg": {
+      "hits": 127151,
+      "blocks": 10607,
+      "dodges": 2628,
+      "parries": 7064,
+      "breaks": 9453,
+      "execs": 2534,
+      "ults": 1859,
+      "whiffs": 0,
+      "counters": 1046,
+      "skills": 59905,
+      "a_dmg": 5982056.382773418,
+      "b_dmg": 4960778.405413976,
+      "frames": 12600348,
+      "close_frames": 1933066,
+      "atk_inst": 165414,
+      "whiff_geo": 25809,
+      "whiff_dodge": 2628,
+      "contacts": 148402,
+      "edge_hits": 48,
+      "rear_contacts": 0,
+      "ang_sum": 1861.240229223264,
+      "rear_inst": 24,
+      "rear_inst_hit": 1,
+      "close_contacts": 49016,
+      "close_atk_inst": 52832,
+      "dodge_used": 87,
+      "backstab_hits": 0,
+      "first_close": 4831,
+      "first_dist": 358874.85703506705
+     },
+     "first": {
+      "close_n": 4831,
+      "far_n": 1169,
+      "close_share": 0.8051666666666667,
+      "close_win_rate": 0.4235148002483958,
+      "far_win_rate": 0.5183917878528657
+     },
+     "label": "3D 贴身开局 56px (halfArc=60°)",
+     "geo": {
+      "mode": "3d",
+      "halfArc_deg": 60,
+      "angleFalloff": 0.35,
+      "backstabMul": 1,
+      "backstabRef": "rear",
+      "turnIdle": 0.1,
+      "turnAttack": 0.03,
+      "turnDodge": 0,
+      "dodgeDirs": 2
+     },
+     "start_gap": 56,
+     "seconds": 177
+    }
+   ]
+  },
+  "s2": {
+   "scan": "s2",
+   "n": 500,
+   "seed": 20260930,
+   "level": "normal",
+   "cells": [
+    {
+     "n_per_cell": 500,
+     "games": 6000,
+     "mean_win_rate": 0.5878333333333333,
+     "mean_win_rate_dec": 0.6268835442454591,
+     "spread_pp": 54,
+     "ttk_dec_s": 21.914516989859457,
+     "ttk_all_s": 35.545830555555554,
+     "draw_rate": 0.06316666666666666,
+     "avg_hero": {
+      "zhirui": {
+       "name": "执锐",
+       "win_rate": 0.45533333333333337,
+       "win_rate_dec": 0.4842976833108412
+      },
+      "zhongfeng": {
+       "name": "重锋",
+       "win_rate": 0.616,
+       "win_rate_dec": 0.641890426443272
+      },
+      "yingsuo": {
+       "name": "影梭",
+       "win_rate": 0.36999999999999994,
+       "win_rate_dec": 0.38719945485450996
+      },
+      "changce": {
+       "name": "长策",
+       "win_rate": 0.91,
+       "win_rate_dec": 0.9941466123732133
+      }
+     },
+     "pairs": {
+      "zhirui>zhongfeng": {
+       "win_rate": 0.49,
+       "win_rate_dec": 0.5104166666666666,
+       "draw_rate": 0.040000000000000036,
+       "ttk_dec_s": 29.94173611111111,
+       "ttk_all_s": 28.744066666666665
+      },
+      "zhirui>yingsuo": {
+       "win_rate": 0.642,
+       "win_rate_dec": 0.6858974358974359,
+       "draw_rate": 0.06399999999999995,
+       "ttk_dec_s": 38.92802706552707,
+       "ttk_all_s": 36.43663333333333
+      },
+      "zhirui>changce": {
+       "win_rate": 0.234,
+       "win_rate_dec": 0.2565789473684211,
+       "draw_rate": 0.08799999999999997,
+       "ttk_dec_s": 47.0358918128655,
+       "ttk_all_s": 42.89673333333334
+      },
+      "zhongfeng>zhirui": {
+       "win_rate": 0.762,
+       "win_rate_dec": 0.7920997920997921,
+       "draw_rate": 0.038000000000000034,
+       "ttk_dec_s": 31.165107415107414,
+       "ttk_all_s": 29.980833333333333
+      },
+      "zhongfeng>yingsuo": {
+       "win_rate": 0.882,
+       "win_rate_dec": 0.9074074074074074,
+       "draw_rate": 0.028000000000000025,
+       "ttk_dec_s": 26.929903978052128,
+       "ttk_all_s": 26.175866666666664
+      },
+      "zhongfeng>changce": {
+       "win_rate": 0.204,
+       "win_rate_dec": 0.2261640798226164,
+       "draw_rate": 0.09799999999999998,
+       "ttk_dec_s": 48.78732446415373,
+       "ttk_all_s": 44.006166666666665
+      },
+      "yingsuo>zhirui": {
+       "win_rate": 0.486,
+       "win_rate_dec": 0.5031055900621118,
+       "draw_rate": 0.03400000000000003,
+       "ttk_dec_s": 30.019220151828847,
+       "ttk_all_s": 28.998566666666665
+      },
+      "yingsuo>zhongfeng": {
+       "win_rate": 0.374,
+       "win_rate_dec": 0.38556701030927837,
+       "draw_rate": 0.030000000000000027,
+       "ttk_dec_s": 27.473264604810996,
+       "ttk_all_s": 26.649066666666666
+      },
+      "yingsuo>changce": {
+       "win_rate": 0.25,
+       "win_rate_dec": 0.27292576419213976,
+       "draw_rate": 0.08399999999999996,
+       "ttk_dec_s": 46.2787845705968,
+       "ttk_all_s": 42.39136666666666
+      },
+      "changce>zhirui": {
+       "win_rate": 0.934,
+       "win_rate_dec": 0.9978632478632479,
+       "draw_rate": 0.06399999999999995,
+       "ttk_dec_s": 37.43988603988604,
+       "ttk_all_s": 35.04373333333333
+      },
+      "changce>zhongfeng": {
+       "win_rate": 0.876,
+       "win_rate_dec": 0.9931972789115646,
+       "draw_rate": 0.118,
+       "ttk_dec_s": 51.906538170823886,
+       "ttk_all_s": 45.78156666666666
+      },
+      "changce>yingsuo": {
+       "win_rate": 0.92,
+       "win_rate_dec": 0.9913793103448276,
+       "draw_rate": 0.07199999999999995,
+       "ttk_dec_s": 42.505783045977005,
+       "ttk_all_s": 39.44536666666667
+      }
+     },
+     "metrics": {
+      "atk_inst": 161034,
+      "contacts": 133812,
+      "whiff_rate": 0.20460896456648905,
+      "whiff_dodge_rate": 0.016561719885241626,
+      "contact_rate": 0.8309549536122807,
+      "edge_rate": 0.00026156099602427286,
+      "rear_share": 0,
+      "rear_inst": 12,
+      "rear_conv": 0,
+      "backstab_hits": 0,
+      "arc_backstab": 0,
+      "mean_angle_deg": 0.5453845636316016,
+      "close_frame_share": 0.10827516182355815,
+      "close_atk_inst": 35124,
+      "close_contact_rate": 0.9329802983714839,
+      "dodge_used": 86,
+      "dodge_evade": 2667,
+      "hits": 115508,
+      "blocks": 9327,
+      "parries": 5606,
+      "breaks": 9734,
+      "execs": 2280,
+      "skills": 61006
+     },
+     "agg": {
+      "hits": 115508,
+      "blocks": 9327,
+      "dodges": 2667,
+      "parries": 5606,
+      "breaks": 9734,
+      "execs": 2280,
+      "ults": 1622,
+      "whiffs": 0,
+      "counters": 1091,
+      "skills": 61006,
+      "a_dmg": 6205918.698659973,
+      "b_dmg": 4335285.53042615,
+      "frames": 12796499,
+      "close_frames": 1385543,
+      "atk_inst": 161034,
+      "whiff_geo": 32949,
+      "whiff_dodge": 2667,
+      "contacts": 133812,
+      "edge_hits": 35,
+      "rear_contacts": 0,
+      "ang_sum": 1273.7238213507262,
+      "rear_inst": 12,
+      "rear_inst_hit": 0,
+      "close_contacts": 32770,
+      "close_atk_inst": 35124,
+      "dodge_used": 86,
+      "backstab_hits": 0,
+      "first_close": 41,
+      "first_dist": 933339.7685223769
+     },
+     "first": {
+      "close_n": 41,
+      "far_n": 5958,
+      "close_share": 0.006834472412068678,
+      "close_win_rate": 0.2926829268292683,
+      "far_win_rate": 0.6564283316549178
+     },
+     "label": "backstabMul=1.00",
+     "geo": {
+      "mode": "3d",
+      "halfArc_deg": 60,
+      "angleFalloff": 0.35,
+      "backstabMul": 1,
+      "backstabRef": "rear",
+      "turnIdle": 0.1,
+      "turnAttack": 0.03,
+      "turnDodge": 0,
+      "dodgeDirs": 2
+     },
+     "seconds": 172.3
+    },
+    {
+     "n_per_cell": 500,
+     "games": 6000,
+     "mean_win_rate": 0.5933333333333333,
+     "mean_win_rate_dec": 0.6322680305936729,
+     "spread_pp": 53.800000000000004,
+     "ttk_dec_s": 21.81996265338787,
+     "ttk_all_s": 35.423230555555556,
+     "draw_rate": 0.06283333333333334,
+     "avg_hero": {
+      "zhirui": {
+       "name": "执锐",
+       "win_rate": 0.47,
+       "win_rate_dec": 0.4948631506483001
+      },
+      "zhongfeng": {
+       "name": "重锋",
+       "win_rate": 0.6173333333333334,
+       "win_rate_dec": 0.6556136312690333
+      },
+      "yingsuo": {
+       "name": "影梭",
+       "win_rate": 0.37399999999999994,
+       "win_rate_dec": 0.39011689769265523
+      },
+      "changce": {
+       "name": "长策",
+       "win_rate": 0.9119999999999999,
+       "win_rate_dec": 0.9884784427647029
+      }
+     },
+     "pairs": {
+      "zhirui>zhongfeng": {
+       "win_rate": 0.508,
+       "win_rate_dec": 0.5302713987473904,
+       "draw_rate": 0.04200000000000004,
+       "ttk_dec_s": 31.040466249130134,
+       "ttk_all_s": 29.736766666666664
+      },
+      "zhirui>yingsuo": {
+       "win_rate": 0.688,
+       "win_rate_dec": 0.7242105263157895,
+       "draw_rate": 0.050000000000000044,
+       "ttk_dec_s": 34.001333333333335,
+       "ttk_all_s": 32.30126666666667
+      },
+      "zhirui>changce": {
+       "win_rate": 0.214,
+       "win_rate_dec": 0.23010752688172043,
+       "draw_rate": 0.06999999999999995,
+       "ttk_dec_s": 42.34351254480286,
+       "ttk_all_s": 39.379466666666666
+      },
+      "zhongfeng>zhirui": {
+       "win_rate": 0.774,
+       "win_rate_dec": 0.8113207547169812,
+       "draw_rate": 0.04600000000000004,
+       "ttk_dec_s": 33.38298392732355,
+       "ttk_all_s": 31.84736666666667
+      },
+      "zhongfeng>yingsuo": {
+       "win_rate": 0.844,
+       "win_rate_dec": 0.8865546218487395,
+       "draw_rate": 0.04800000000000004,
+       "ttk_dec_s": 33.04338235294117,
+       "ttk_all_s": 31.4573
+      },
+      "zhongfeng>changce": {
+       "win_rate": 0.234,
+       "win_rate_dec": 0.2689655172413793,
+       "draw_rate": 0.13,
+       "ttk_dec_s": 57.458773946360154,
+       "ttk_all_s": 49.989133333333335
+      },
+      "yingsuo>zhirui": {
+       "win_rate": 0.502,
+       "win_rate_dec": 0.518595041322314,
+       "draw_rate": 0.03200000000000003,
+       "ttk_dec_s": 29.05392561983471,
+       "ttk_all_s": 28.1242
+      },
+      "yingsuo>zhongfeng": {
+       "win_rate": 0.36,
+       "win_rate_dec": 0.37037037037037035,
+       "draw_rate": 0.028000000000000025,
+       "ttk_dec_s": 27.14818244170096,
+       "ttk_all_s": 26.388033333333333
+      },
+      "yingsuo>changce": {
+       "win_rate": 0.26,
+       "win_rate_dec": 0.2813852813852814,
+       "draw_rate": 0.07599999999999996,
+       "ttk_dec_s": 43.798665223665225,
+       "ttk_all_s": 40.469966666666664
+      },
+      "changce>zhirui": {
+       "win_rate": 0.942,
+       "win_rate_dec": 0.9957716701902748,
+       "draw_rate": 0.05400000000000005,
+       "ttk_dec_s": 34.61966173361522,
+       "ttk_all_s": 32.7502
+      },
+      "changce>zhongfeng": {
+       "win_rate": 0.89,
+       "win_rate_dec": 0.9955257270693513,
+       "draw_rate": 0.10599999999999998,
+       "ttk_dec_s": 48.22017151379568,
+       "ttk_all_s": 43.10883333333334
+      },
+      "changce>yingsuo": {
+       "win_rate": 0.904,
+       "win_rate_dec": 0.9741379310344828,
+       "draw_rate": 0.07199999999999995,
+       "ttk_dec_s": 42.592923850574714,
+       "ttk_all_s": 39.52623333333334
+      }
+     },
+     "metrics": {
+      "atk_inst": 160741,
+      "contacts": 134238,
+      "whiff_rate": 0.20034714229723594,
+      "whiff_dodge_rate": 0.017151815653753556,
+      "contact_rate": 0.8351198511891801,
+      "edge_rate": 0.00026073094056824447,
+      "rear_share": 0.0000074494554448069845,
+      "rear_inst": 11,
+      "rear_conv": 0.09090909090909091,
+      "backstab_hits": 1,
+      "arc_backstab": 0,
+      "mean_angle_deg": 0.558877473398967,
+      "close_frame_share": 0.11130086243624025,
+      "close_atk_inst": 36158,
+      "close_contact_rate": 0.9330438630455224,
+      "dodge_used": 86,
+      "dodge_evade": 2757,
+      "hits": 115919,
+      "blocks": 9222,
+      "parries": 5741,
+      "breaks": 9805,
+      "execs": 2258,
+      "skills": 60334
+     },
+     "agg": {
+      "hits": 115919,
+      "blocks": 9222,
+      "dodges": 2757,
+      "parries": 5741,
+      "breaks": 9805,
+      "execs": 2258,
+      "ults": 1737,
+      "whiffs": 0,
+      "counters": 1098,
+      "skills": 60334,
+      "a_dmg": 6233657.399200923,
+      "b_dmg": 4336020.036716482,
+      "frames": 12752363,
+      "close_frames": 1419349,
+      "atk_inst": 160741,
+      "whiff_geo": 32204,
+      "whiff_dodge": 2757,
+      "contacts": 134238,
+      "edge_hits": 35,
+      "rear_contacts": 1,
+      "ang_sum": 1309.391283471423,
+      "rear_inst": 11,
+      "rear_inst_hit": 1,
+      "close_contacts": 33737,
+      "close_atk_inst": 36158,
+      "dodge_used": 86,
+      "backstab_hits": 1,
+      "first_close": 36,
+      "first_dist": 935323.6108917508
+     },
+     "first": {
+      "close_n": 36,
+      "far_n": 5964,
+      "close_share": 0.006,
+      "close_win_rate": 0.3055555555555556,
+      "far_win_rate": 0.6589537223340041
+     },
+     "label": "backstabMul=1.15",
+     "geo": {
+      "mode": "3d",
+      "halfArc_deg": 60,
+      "angleFalloff": 0.35,
+      "backstabMul": 1.15,
+      "backstabRef": "rear",
+      "turnIdle": 0.1,
+      "turnAttack": 0.03,
+      "turnDodge": 0,
+      "dodgeDirs": 2
+     },
+     "seconds": 180
+    },
+    {
+     "n_per_cell": 500,
+     "games": 6000,
+     "mean_win_rate": 0.5856666666666667,
+     "mean_win_rate_dec": 0.6255386552202344,
+     "spread_pp": 56.266666666666666,
+     "ttk_dec_s": 21.943115359418737,
+     "ttk_all_s": 36.51634166666667,
+     "draw_rate": 0.06716666666666667,
+     "avg_hero": {
+      "zhirui": {
+       "name": "执锐",
+       "win_rate": 0.4726666666666666,
+       "win_rate_dec": 0.49796928882442026
+      },
+      "zhongfeng": {
+       "name": "重锋",
+       "win_rate": 0.602,
+       "win_rate_dec": 0.6450200558499667
+      },
+      "yingsuo": {
+       "name": "影梭",
+       "win_rate": 0.3526666666666667,
+       "win_rate_dec": 0.36914229682186916
+      },
+      "changce": {
+       "name": "长策",
+       "win_rate": 0.9153333333333333,
+       "win_rate_dec": 0.9900229793846815
+      }
+     },
+     "pairs": {
+      "zhirui>zhongfeng": {
+       "win_rate": 0.492,
+       "win_rate_dec": 0.5082644628099173,
+       "draw_rate": 0.03200000000000003,
+       "ttk_dec_s": 28.928891184573,
+       "ttk_all_s": 28.00316666666667
+      },
+      "zhirui>yingsuo": {
+       "win_rate": 0.702,
+       "win_rate_dec": 0.7389473684210527,
+       "draw_rate": 0.050000000000000044,
+       "ttk_dec_s": 34.64322807017543,
+       "ttk_all_s": 32.91106666666666
+      },
+      "zhirui>changce": {
+       "win_rate": 0.224,
+       "win_rate_dec": 0.24669603524229075,
+       "draw_rate": 0.09199999999999997,
+       "ttk_dec_s": 48.069493392070484,
+       "ttk_all_s": 43.6471
+      },
+      "zhongfeng>zhirui": {
+       "win_rate": 0.75,
+       "win_rate_dec": 0.8047210300429185,
+       "draw_rate": 0.06799999999999995,
+       "ttk_dec_s": 39.6472460658083,
+       "ttk_all_s": 36.951233333333334
+      },
+      "zhongfeng>yingsuo": {
+       "win_rate": 0.85,
+       "win_rate_dec": 0.8891213389121339,
+       "draw_rate": 0.04400000000000004,
+       "ttk_dec_s": 31.11854951185495,
+       "ttk_all_s": 29.749333333333333
+      },
+      "zhongfeng>changce": {
+       "win_rate": 0.206,
+       "win_rate_dec": 0.24121779859484777,
+       "draw_rate": 0.14600000000000002,
+       "ttk_dec_s": 64.18637782982044,
+       "ttk_all_s": 54.81516666666666
+      },
+      "yingsuo>zhirui": {
+       "win_rate": 0.456,
+       "win_rate_dec": 0.4681724845995893,
+       "draw_rate": 0.026000000000000023,
+       "ttk_dec_s": 27.91978097193703,
+       "ttk_all_s": 27.19386666666667
+      },
+      "yingsuo>zhongfeng": {
+       "win_rate": 0.368,
+       "win_rate_dec": 0.3865546218487395,
+       "draw_rate": 0.04800000000000004,
+       "ttk_dec_s": 31.84142156862745,
+       "ttk_all_s": 30.313033333333333
+      },
+      "yingsuo>changce": {
+       "win_rate": 0.234,
+       "win_rate_dec": 0.2526997840172786,
+       "draw_rate": 0.07399999999999995,
+       "ttk_dec_s": 43.75424766018718,
+       "ttk_all_s": 40.51643333333333
+      },
+      "changce>zhirui": {
+       "win_rate": 0.92,
+       "win_rate_dec": 0.9956709956709957,
+       "draw_rate": 0.07599999999999996,
+       "ttk_dec_s": 40.951190476190476,
+       "ttk_all_s": 37.838899999999995
+      },
+      "changce>zhongfeng": {
+       "win_rate": 0.908,
+       "win_rate_dec": 0.9978021978021978,
+       "draw_rate": 0.08999999999999997,
+       "ttk_dec_s": 43.19648351648352,
+       "ttk_all_s": 39.3088
+      },
+      "changce>yingsuo": {
+       "win_rate": 0.918,
+       "win_rate_dec": 0.9765957446808511,
+       "draw_rate": 0.06000000000000005,
+       "ttk_dec_s": 39.306382978723406,
+       "ttk_all_s": 36.948
+      }
+     },
+     "metrics": {
+      "atk_inst": 160774,
+      "contacts": 133445,
+      "whiff_rate": 0.20630823391841965,
+      "whiff_dodge_rate": 0.01624640800129374,
+      "contact_rate": 0.8300160473708436,
+      "edge_rate": 0.0002922552362396493,
+      "rear_share": 0,
+      "rear_inst": 15,
+      "rear_conv": 0,
+      "backstab_hits": 0,
+      "arc_backstab": 0,
+      "mean_angle_deg": 0.566821629370584,
+      "close_frame_share": 0.10492760356987811,
+      "close_atk_inst": 34959,
+      "close_contact_rate": 0.9350953974656026,
+      "dodge_used": 80,
+      "dodge_evade": 2612,
+      "hits": 115222,
+      "blocks": 9031,
+      "parries": 5709,
+      "breaks": 9570,
+      "execs": 2301,
+      "skills": 61154
+     },
+     "agg": {
+      "hits": 115222,
+      "blocks": 9031,
+      "dodges": 2612,
+      "parries": 5709,
+      "breaks": 9570,
+      "execs": 2301,
+      "ults": 1733,
+      "whiffs": 0,
+      "counters": 1182,
+      "skills": 61154,
+      "a_dmg": 6187992.0801651925,
+      "b_dmg": 4324723.276028166,
+      "frames": 13145883,
+      "close_frames": 1379366,
+      "atk_inst": 160774,
+      "whiff_geo": 33169,
+      "whiff_dodge": 2612,
+      "contacts": 133445,
+      "edge_hits": 39,
+      "rear_contacts": 0,
+      "ang_sum": 1320.1585347850419,
+      "rear_inst": 15,
+      "rear_inst_hit": 0,
+      "close_contacts": 32690,
+      "close_atk_inst": 34959,
+      "dodge_used": 80,
+      "backstab_hits": 0,
+      "first_close": 35,
+      "first_dist": 936901.9909258737
+     },
+     "first": {
+      "close_n": 35,
+      "far_n": 5963,
+      "close_share": 0.005835278426142047,
+      "close_win_rate": 0.34285714285714286,
+      "far_win_rate": 0.6588965285929901
+     },
+     "label": "backstabMul=1.25",
+     "geo": {
+      "mode": "3d",
+      "halfArc_deg": 60,
+      "angleFalloff": 0.35,
+      "backstabMul": 1.25,
+      "backstabRef": "rear",
+      "turnIdle": 0.1,
+      "turnAttack": 0.03,
+      "turnDodge": 0,
+      "dodgeDirs": 2
+     },
+     "seconds": 182.5
+    },
+    {
+     "n_per_cell": 500,
+     "games": 6000,
+     "mean_win_rate": 0.5975,
+     "mean_win_rate_dec": 0.6359521530867474,
+     "spread_pp": 53.400000000000006,
+     "ttk_dec_s": 22.075890168290524,
+     "ttk_all_s": 34.79105555555555,
+     "draw_rate": 0.059166666666666666,
+     "avg_hero": {
+      "zhirui": {
+       "name": "执锐",
+       "win_rate": 0.5006666666666667,
+       "win_rate_dec": 0.5230422979396413
+      },
+      "zhongfeng": {
+       "name": "重锋",
+       "win_rate": 0.594,
+       "win_rate_dec": 0.6328802094512839
+      },
+      "yingsuo": {
+       "name": "影梭",
+       "win_rate": 0.38066666666666665,
+       "win_rate_dec": 0.395153674773645
+      },
+      "changce": {
+       "name": "长策",
+       "win_rate": 0.9146666666666666,
+       "win_rate_dec": 0.9927324301824193
+      }
+     },
+     "pairs": {
+      "zhirui>zhongfeng": {
+       "win_rate": 0.5,
+       "win_rate_dec": 0.508130081300813,
+       "draw_rate": 0.016000000000000014,
+       "ttk_dec_s": 24.477032520325203,
+       "ttk_all_s": 24.0854
+      },
+      "zhirui>yingsuo": {
+       "win_rate": 0.69,
+       "win_rate_dec": 0.7247899159663865,
+       "draw_rate": 0.04800000000000004,
+       "ttk_dec_s": 34.48543417366947,
+       "ttk_all_s": 32.830133333333336
+      },
+      "zhirui>changce": {
+       "win_rate": 0.312,
+       "win_rate_dec": 0.33620689655172414,
+       "draw_rate": 0.07199999999999995,
+       "ttk_dec_s": 42.18265086206897,
+       "ttk_all_s": 39.1455
+      },
+      "zhongfeng>zhirui": {
+       "win_rate": 0.736,
+       "win_rate_dec": 0.7896995708154506,
+       "draw_rate": 0.06799999999999995,
+       "ttk_dec_s": 40.02117310443491,
+       "ttk_all_s": 37.29973333333333
+      },
+      "zhongfeng>yingsuo": {
+       "win_rate": 0.842,
+       "win_rate_dec": 0.8807531380753139,
+       "draw_rate": 0.04400000000000004,
+       "ttk_dec_s": 32.549232914923294,
+       "ttk_all_s": 31.117066666666666
+      },
+      "zhongfeng>changce": {
+       "win_rate": 0.204,
+       "win_rate_dec": 0.22818791946308725,
+       "draw_rate": 0.10599999999999998,
+       "ttk_dec_s": 51.15234899328859,
+       "ttk_all_s": 45.730199999999996
+      },
+      "yingsuo>zhirui": {
+       "win_rate": 0.502,
+       "win_rate_dec": 0.514344262295082,
+       "draw_rate": 0.02400000000000002,
+       "ttk_dec_s": 26.117862021857924,
+       "ttk_all_s": 25.491033333333334
+      },
+      "yingsuo>zhongfeng": {
+       "win_rate": 0.358,
+       "win_rate_dec": 0.36983471074380164,
+       "draw_rate": 0.03200000000000003,
+       "ttk_dec_s": 28.016735537190083,
+       "ttk_all_s": 27.1202
+      },
+      "yingsuo>changce": {
+       "win_rate": 0.282,
+       "win_rate_dec": 0.30128205128205127,
+       "draw_rate": 0.06399999999999995,
+       "ttk_dec_s": 40.64707977207977,
+       "ttk_all_s": 38.04566666666666
+      },
+      "changce>zhirui": {
+       "win_rate": 0.926,
+       "win_rate_dec": 0.9935622317596566,
+       "draw_rate": 0.06799999999999995,
+       "ttk_dec_s": 38.787267525035766,
+       "ttk_all_s": 36.14973333333333
+      },
+      "changce>zhongfeng": {
+       "win_rate": 0.88,
+       "win_rate_dec": 0.990990990990991,
+       "draw_rate": 0.11199999999999999,
+       "ttk_dec_s": 50.15608108108108,
+       "ttk_all_s": 44.538599999999995
+      },
+      "changce>yingsuo": {
+       "win_rate": 0.938,
+       "win_rate_dec": 0.9936440677966102,
+       "draw_rate": 0.05600000000000005,
+       "ttk_dec_s": 38.07139830508474,
+       "ttk_all_s": 35.9394
+      }
+     },
+     "metrics": {
+      "atk_inst": 162275,
+      "contacts": 136045,
+      "whiff_rate": 0.1982498844553998,
+      "whiff_dodge_rate": 0.016509012478816823,
+      "contact_rate": 0.8383608072716069,
+      "edge_rate": 0.008188467051343306,
+      "rear_share": 0.000029402036090999303,
+      "rear_inst": 114,
+      "rear_conv": 0.07017543859649122,
+      "backstab_hits": 0,
+      "arc_backstab": 0,
+      "mean_angle_deg": 2.6409653156369273,
+      "close_frame_share": 0.11997360432678258,
+      "close_atk_inst": 38441,
+      "close_contact_rate": 0.9218542701802762,
+      "dodge_used": 114,
+      "dodge_evade": 2679,
+      "hits": 117232,
+      "blocks": 9471,
+      "parries": 5952,
+      "breaks": 9820,
+      "execs": 2313,
+      "skills": 59539
+     },
+     "agg": {
+      "hits": 117232,
+      "blocks": 9471,
+      "dodges": 2679,
+      "parries": 5952,
+      "breaks": 9820,
+      "execs": 2313,
+      "ults": 1774,
+      "whiffs": 0,
+      "counters": 1077,
+      "skills": 59539,
+      "a_dmg": 6268830.699018924,
+      "b_dmg": 4343922.887695917,
+      "frames": 12524780,
+      "close_frames": 1502643,
+      "atk_inst": 162275,
+      "whiff_geo": 32171,
+      "whiff_dodge": 2679,
+      "contacts": 136045,
+      "edge_hits": 1114,
+      "rear_contacts": 4,
+      "ang_sum": 6270.795674990148,
+      "rear_inst": 114,
+      "rear_inst_hit": 8,
+      "close_contacts": 35437,
+      "close_atk_inst": 38441,
+      "dodge_used": 114,
+      "backstab_hits": 0,
+      "first_close": 35,
+      "first_dist": 932668.3055327437
+     },
+     "first": {
+      "close_n": 35,
+      "far_n": 5964,
+      "close_share": 0.005834305717619603,
+      "close_win_rate": 0.45714285714285713,
+      "far_win_rate": 0.6539235412474849
+     },
+     "label": "绕背可达时 mul=1.00 (turnIdle=0.02)",
+     "geo": {
+      "mode": "3d",
+      "halfArc_deg": 60,
+      "angleFalloff": 0.35,
+      "backstabMul": 1,
+      "backstabRef": "rear",
+      "turnIdle": 0.02,
+      "turnAttack": 0.03,
+      "turnDodge": 0,
+      "dodgeDirs": 2
+     },
+     "seconds": 175.6
+    },
+    {
+     "n_per_cell": 500,
+     "games": 6000,
+     "mean_win_rate": 0.61,
+     "mean_win_rate_dec": 0.6556976471345134,
+     "spread_pp": 47.93333333333333,
+     "ttk_dec_s": 21.889280614066404,
+     "ttk_all_s": 36.25123333333333,
+     "draw_rate": 0.06633333333333333,
+     "avg_hero": {
+      "zhirui": {
+       "name": "执锐",
+       "win_rate": 0.5166666666666667,
+       "win_rate_dec": 0.5490499793031128
+      },
+      "zhongfeng": {
+       "name": "重锋",
+       "win_rate": 0.604,
+       "win_rate_dec": 0.6455402123056241
+      },
+      "yingsuo": {
+       "name": "影梭",
+       "win_rate": 0.42,
+       "win_rate_dec": 0.433956832966158
+      },
+      "changce": {
+       "name": "长策",
+       "win_rate": 0.8993333333333333,
+       "win_rate_dec": 0.9942435639631588
+      }
+     },
+     "pairs": {
+      "zhirui>zhongfeng": {
+       "win_rate": 0.52,
+       "win_rate_dec": 0.5439330543933054,
+       "draw_rate": 0.04400000000000004,
+       "ttk_dec_s": 31.42391910739191,
+       "ttk_all_s": 30.04126666666667
+      },
+      "zhirui>yingsuo": {
+       "win_rate": 0.704,
+       "win_rate_dec": 0.7441860465116279,
+       "draw_rate": 0.05400000000000005,
+       "ttk_dec_s": 35.64795630725863,
+       "ttk_all_s": 33.722966666666665
+      },
+      "zhirui>changce": {
+       "win_rate": 0.326,
+       "win_rate_dec": 0.3590308370044053,
+       "draw_rate": 0.09199999999999997,
+       "ttk_dec_s": 47.49144640234949,
+       "ttk_all_s": 43.122233333333334
+      },
+      "zhongfeng>zhirui": {
+       "win_rate": 0.784,
+       "win_rate_dec": 0.8376068376068376,
+       "draw_rate": 0.06399999999999995,
+       "ttk_dec_s": 38.23144586894587,
+       "ttk_all_s": 35.78463333333333
+      },
+      "zhongfeng>yingsuo": {
+       "win_rate": 0.814,
+       "win_rate_dec": 0.8622881355932204,
+       "draw_rate": 0.05600000000000005,
+       "ttk_dec_s": 35.23859463276836,
+       "ttk_all_s": 33.265233333333335
+      },
+      "zhongfeng>changce": {
+       "win_rate": 0.214,
+       "win_rate_dec": 0.23672566371681417,
+       "draw_rate": 0.09599999999999997,
+       "ttk_dec_s": 48.30855457227139,
+       "ttk_all_s": 43.67093333333333
+      },
+      "yingsuo>zhirui": {
+       "win_rate": 0.516,
+       "win_rate_dec": 0.5254582484725051,
+       "draw_rate": 0.018000000000000016,
+       "ttk_dec_s": 25.868737270875766,
+       "ttk_all_s": 25.4031
+      },
+      "yingsuo>zhongfeng": {
+       "win_rate": 0.406,
+       "win_rate_dec": 0.41683778234086244,
+       "draw_rate": 0.026000000000000023,
+       "ttk_dec_s": 26.42056810403833,
+       "ttk_all_s": 25.733633333333334
+      },
+      "yingsuo>changce": {
+       "win_rate": 0.338,
+       "win_rate_dec": 0.3595744680851064,
+       "draw_rate": 0.06000000000000005,
+       "ttk_dec_s": 39.28308510638298,
+       "ttk_all_s": 36.9261
+      },
+      "changce>zhirui": {
+       "win_rate": 0.924,
+       "win_rate_dec": 0.9956896551724138,
+       "draw_rate": 0.07199999999999995,
+       "ttk_dec_s": 39.29019396551724,
+       "ttk_all_s": 36.4613
+      },
+      "changce>zhongfeng": {
+       "win_rate": 0.86,
+       "win_rate_dec": 1,
+       "draw_rate": 0.14,
+       "ttk_dec_s": 58.89151162790698,
+       "ttk_all_s": 50.6467
+      },
+      "changce>yingsuo": {
+       "win_rate": 0.914,
+       "win_rate_dec": 0.9870410367170627,
+       "draw_rate": 0.07399999999999995,
+       "ttk_dec_s": 43.45215982721382,
+       "ttk_all_s": 40.236700000000006
+      }
+     },
+     "metrics": {
+      "atk_inst": 162469,
+      "contacts": 135119,
+      "whiff_rate": 0.2049314022982846,
+      "whiff_dodge_rate": 0.016587779822612312,
+      "contact_rate": 0.83166019363694,
+      "edge_rate": 0.007519297804157816,
+      "rear_share": 0.000014801767331019323,
+      "rear_inst": 140,
+      "rear_conv": 0.014285714285714285,
+      "backstab_hits": 1,
+      "arc_backstab": 0,
+      "mean_angle_deg": 2.6572327799348465,
+      "close_frame_share": 0.1153951543717593,
+      "close_atk_inst": 38564,
+      "close_contact_rate": 0.9198734571102583,
+      "dodge_used": 109,
+      "dodge_evade": 2695,
+      "hits": 116615,
+      "blocks": 9433,
+      "parries": 5636,
+      "breaks": 9732,
+      "execs": 2367,
+      "skills": 60693
+     },
+     "agg": {
+      "hits": 116615,
+      "blocks": 9433,
+      "dodges": 2695,
+      "parries": 5636,
+      "breaks": 9732,
+      "execs": 2367,
+      "ults": 1695,
+      "whiffs": 0,
+      "counters": 1068,
+      "skills": 60693,
+      "a_dmg": 6333862.76816751,
+      "b_dmg": 4248167.191312262,
+      "frames": 13050444,
+      "close_frames": 1505958,
+      "atk_inst": 162469,
+      "whiff_geo": 33295,
+      "whiff_dodge": 2695,
+      "contacts": 135119,
+      "edge_hits": 1016,
+      "rear_contacts": 2,
+      "ang_sum": 6266.476153100185,
+      "rear_inst": 140,
+      "rear_inst_hit": 2,
+      "close_contacts": 35474,
+      "close_atk_inst": 38564,
+      "dodge_used": 109,
+      "backstab_hits": 1,
+      "first_close": 40,
+      "first_dist": 932878.9994410565
+     },
+     "first": {
+      "close_n": 40,
+      "far_n": 5957,
+      "close_share": 0.006670001667500417,
+      "close_win_rate": 0.525,
+      "far_win_rate": 0.6515024341111297
+     },
+     "label": "绕背可达时 mul=1.25 (turnIdle=0.02)",
+     "geo": {
+      "mode": "3d",
+      "halfArc_deg": 60,
+      "angleFalloff": 0.35,
+      "backstabMul": 1.25,
+      "backstabRef": "rear",
+      "turnIdle": 0.02,
+      "turnAttack": 0.03,
+      "turnDodge": 0,
+      "dodgeDirs": 2
+     },
+     "seconds": 176.5
+    }
+   ]
+  },
+  "base": {
+   "scan": "base",
+   "n": 500,
+   "seed": 20260930,
+   "level": "normal",
+   "cells": [
+    {
+     "n_per_cell": 500,
+     "games": 6000,
+     "mean_win_rate": 0.48983333333333334,
+     "mean_win_rate_dec": 0.4908724800726383,
+     "spread_pp": 2.3333333333333317,
+     "ttk_dec_s": 19.65849061856244,
+     "ttk_all_s": 19.66716111111111,
+     "draw_rate": 0.0021666666666666666,
+     "avg_hero": {
+      "zhirui": {
+       "name": "执锐",
+       "win_rate": 0.49066666666666664,
+       "win_rate_dec": 0.491315965263861
+      },
+      "zhongfeng": {
+       "name": "重锋",
+       "win_rate": 0.48,
+       "win_rate_dec": 0.4818184756609994
+      },
+      "yingsuo": {
+       "name": "影梭",
+       "win_rate": 0.48533333333333334,
+       "win_rate_dec": 0.4856539746158985
+      },
+      "changce": {
+       "name": "长策",
+       "win_rate": 0.5033333333333333,
+       "win_rate_dec": 0.5047015047497941
+      }
+     },
+     "pairs": {
+      "zhirui>zhongfeng": {
+       "win_rate": 0.512,
+       "win_rate_dec": 0.5130260521042084,
+       "draw_rate": 0.0020000000000000018,
+       "ttk_dec_s": 19.7938543754175,
+       "ttk_all_s": 19.75426666666667
+      },
+      "zhirui>yingsuo": {
+       "win_rate": 0.5,
+       "win_rate_dec": 0.5,
+       "draw_rate": 0,
+       "ttk_dec_s": 21.002,
+       "ttk_all_s": 21.002
+      },
+      "zhirui>changce": {
+       "win_rate": 0.46,
+       "win_rate_dec": 0.46092184368737477,
+       "draw_rate": 0.0020000000000000018,
+       "ttk_dec_s": 19.436138944555776,
+       "ttk_all_s": 19.397266666666667
+      },
+      "zhongfeng>zhirui": {
+       "win_rate": 0.424,
+       "win_rate_dec": 0.4274193548387097,
+       "draw_rate": 0.008000000000000007,
+       "ttk_dec_s": 19.941095430107527,
+       "ttk_all_s": 19.781566666666667
+      },
+      "zhongfeng>yingsuo": {
+       "win_rate": 0.522,
+       "win_rate_dec": 0.5230460921843687,
+       "draw_rate": 0.0020000000000000018,
+       "ttk_dec_s": 19.732331329325316,
+       "ttk_all_s": 19.692866666666664
+      },
+      "zhongfeng>changce": {
+       "win_rate": 0.494,
+       "win_rate_dec": 0.49498997995991983,
+       "draw_rate": 0.0020000000000000018,
+       "ttk_dec_s": 18.368002672010686,
+       "ttk_all_s": 18.331266666666668
+      },
+      "yingsuo>zhirui": {
+       "win_rate": 0.466,
+       "win_rate_dec": 0.466,
+       "draw_rate": 0,
+       "ttk_dec_s": 21.455466666666666,
+       "ttk_all_s": 21.455466666666666
+      },
+      "yingsuo>zhongfeng": {
+       "win_rate": 0.48,
+       "win_rate_dec": 0.48096192384769537,
+       "draw_rate": 0.0020000000000000018,
+       "ttk_dec_s": 19.737909151636604,
+       "ttk_all_s": 19.698433333333334
+      },
+      "yingsuo>changce": {
+       "win_rate": 0.51,
+       "win_rate_dec": 0.51,
+       "draw_rate": 0,
+       "ttk_dec_s": 19.536333333333335,
+       "ttk_all_s": 19.536333333333335
+      },
+      "changce>zhirui": {
+       "win_rate": 0.536,
+       "win_rate_dec": 0.5381526104417671,
+       "draw_rate": 0.0040000000000000036,
+       "ttk_dec_s": 19.852175368139225,
+       "ttk_all_s": 19.772766666666666
+      },
+      "changce>zhongfeng": {
+       "win_rate": 0.488,
+       "win_rate_dec": 0.48897795591182364,
+       "draw_rate": 0.0020000000000000018,
+       "ttk_dec_s": 18.05507682030728,
+       "ttk_all_s": 18.018966666666664
+      },
+      "changce>yingsuo": {
+       "win_rate": 0.486,
+       "win_rate_dec": 0.48697394789579157,
+       "draw_rate": 0.0020000000000000018,
+       "ttk_dec_s": 19.603941215764863,
+       "ttk_all_s": 19.564733333333333
+      }
+     },
+     "metrics": {
+      "atk_inst": 171409,
+      "contacts": 160660,
+      "whiff_rate": 0.09114457233867533,
+      "whiff_dodge_rate": 0.020518175825073363,
+      "contact_rate": 0.9372903406472239,
+      "edge_rate": 0,
+      "rear_share": 0,
+      "rear_inst": 0,
+      "rear_conv": null,
+      "backstab_hits": 0,
+      "arc_backstab": 0,
+      "mean_angle_deg": 0,
+      "close_frame_share": 0.03989405351108404,
+      "close_atk_inst": 7052,
+      "close_contact_rate": 1.033749290981282,
+      "dodge_used": 151,
+      "dodge_evade": 3517,
+      "hits": 132578,
+      "blocks": 14849,
+      "parries": 9402,
+      "breaks": 12373,
+      "execs": 3315,
+      "skills": 43603
+     },
+     "agg": {
+      "hits": 132578,
+      "blocks": 14849,
+      "dodges": 3517,
+      "parries": 9402,
+      "breaks": 12373,
+      "execs": 3315,
+      "ults": 1613,
+      "whiffs": 0,
+      "counters": 516,
+      "skills": 43603,
+      "a_dmg": 6035400.645999999,
+      "b_dmg": 6113576.790719999,
+      "frames": 7080178,
+      "close_frames": 282457,
+      "atk_inst": 171409,
+      "whiff_geo": 15623,
+      "whiff_dodge": 3517,
+      "contacts": 160660,
+      "edge_hits": 0,
+      "rear_contacts": 0,
+      "ang_sum": 0,
+      "rear_inst": 0,
+      "rear_inst_hit": 0,
+      "close_contacts": 7290,
+      "close_atk_inst": 7052,
+      "dodge_used": 151,
+      "backstab_hits": 0,
+      "first_close": 0,
+      "first_dist": 748522.3888666682
+     },
+     "first": {
+      "close_n": 0,
+      "far_n": 6000,
+      "close_share": 0,
+      "close_win_rate": null,
+      "far_win_rate": 0.5318333333333334
+     },
+     "label": "1D 一维基准（2D 原版路径）",
+     "geo": {
+      "mode": "1d",
+      "halfArc_deg": 60,
+      "angleFalloff": 0.35,
+      "backstabMul": 1,
+      "backstabRef": "rear",
+      "turnIdle": 0.1,
+      "turnAttack": 0.03,
+      "turnDodge": 0,
+      "dodgeDirs": 2
+     },
+     "seconds": 61.4
+    }
+   ]
+  },
+  "s1": {
+   "scan": "s1",
+   "n": 500,
+   "seed": 20260930,
+   "level": "normal",
+   "cells": [
+    {
+     "n_per_cell": 500,
+     "games": 6000,
+     "mean_win_rate": 0.5803333333333334,
+     "mean_win_rate_dec": 0.6224534243901759,
+     "spread_pp": 53.400000000000006,
+     "ttk_dec_s": 22.07400938632448,
+     "ttk_all_s": 36.06042777777778,
+     "draw_rate": 0.06483333333333334,
+     "avg_hero": {
+      "zhirui": {
+       "name": "执锐",
+       "win_rate": 0.4586666666666667,
+       "win_rate_dec": 0.4806882243168164
+      },
+      "zhongfeng": {
+       "name": "重锋",
+       "win_rate": 0.6126666666666667,
+       "win_rate_dec": 0.6448269130661114
+      },
+      "yingsuo": {
+       "name": "影梭",
+       "win_rate": 0.35800000000000004,
+       "win_rate_dec": 0.3744867056194039
+      },
+      "changce": {
+       "name": "长策",
+       "win_rate": 0.892,
+       "win_rate_dec": 0.9898118545583721
+      }
+     },
+     "pairs": {
+      "zhirui>zhongfeng": {
+       "win_rate": 0.512,
+       "win_rate_dec": 0.5245901639344263,
+       "draw_rate": 0.02400000000000002,
+       "ttk_dec_s": 27.017964480874316,
+       "ttk_all_s": 26.369533333333333
+      },
+      "zhirui>yingsuo": {
+       "win_rate": 0.682,
+       "win_rate_dec": 0.7209302325581395,
+       "draw_rate": 0.05400000000000005,
+       "ttk_dec_s": 35.83121916842847,
+       "ttk_all_s": 33.89633333333333
+      },
+      "zhirui>changce": {
+       "win_rate": 0.182,
+       "win_rate_dec": 0.19654427645788336,
+       "draw_rate": 0.07399999999999995,
+       "ttk_dec_s": 43.06958243340533,
+       "ttk_all_s": 39.88243333333333
+      },
+      "zhongfeng>zhirui": {
+       "win_rate": 0.784,
+       "win_rate_dec": 0.8235294117647058,
+       "draw_rate": 0.04800000000000004,
+       "ttk_dec_s": 33.88035714285714,
+       "ttk_all_s": 32.2541
+      },
+      "zhongfeng>yingsuo": {
+       "win_rate": 0.852,
+       "win_rate_dec": 0.8875,
+       "draw_rate": 0.040000000000000036,
+       "ttk_dec_s": 31.0475,
+       "ttk_all_s": 29.805600000000002
+      },
+      "zhongfeng>changce": {
+       "win_rate": 0.202,
+       "win_rate_dec": 0.2234513274336283,
+       "draw_rate": 0.09599999999999997,
+       "ttk_dec_s": 48.37868731563422,
+       "ttk_all_s": 43.73433333333333
+      },
+      "yingsuo>zhirui": {
+       "win_rate": 0.498,
+       "win_rate_dec": 0.515527950310559,
+       "draw_rate": 0.03400000000000003,
+       "ttk_dec_s": 28.88029675638371,
+       "ttk_all_s": 27.898366666666668
+      },
+      "yingsuo>zhongfeng": {
+       "win_rate": 0.34,
+       "win_rate_dec": 0.35196687370600416,
+       "draw_rate": 0.03400000000000003,
+       "ttk_dec_s": 28.645169082125605,
+       "ttk_all_s": 27.67123333333333
+      },
+      "yingsuo>changce": {
+       "win_rate": 0.236,
+       "win_rate_dec": 0.2559652928416486,
+       "draw_rate": 0.07799999999999996,
+       "ttk_dec_s": 44.89342010122922,
+       "ttk_all_s": 41.391733333333335
+      },
+      "changce>zhirui": {
+       "win_rate": 0.902,
+       "win_rate_dec": 0.9955849889624724,
+       "draw_rate": 0.09399999999999997,
+       "ttk_dec_s": 45.84558498896247,
+       "ttk_all_s": 41.536100000000005
+      },
+      "changce>zhongfeng": {
+       "win_rate": 0.866,
+       "win_rate_dec": 0.9954022988505747,
+       "draw_rate": 0.13,
+       "ttk_dec_s": 55.70758620689655,
+       "ttk_all_s": 48.4656
+      },
+      "changce>yingsuo": {
+       "win_rate": 0.908,
+       "win_rate_dec": 0.978448275862069,
+       "draw_rate": 0.07199999999999995,
+       "ttk_dec_s": 42.90923132183908,
+       "ttk_all_s": 39.819766666666666
+      }
+     },
+     "metrics": {
+      "atk_inst": 162710,
+      "contacts": 135356,
+      "whiff_rate": 0.20425296539856186,
+      "whiff_dodge_rate": 0.016919673037920226,
+      "contact_rate": 0.8318849486817036,
+      "edge_rate": 0.0019430243210496764,
+      "rear_share": 0.000007387925175093826,
+      "rear_inst": 14,
+      "rear_conv": 0.14285714285714285,
+      "backstab_hits": 0,
+      "arc_backstab": 0,
+      "mean_angle_deg": 0.500347789783924,
+      "close_frame_share": 0.10845437373100739,
+      "close_atk_inst": 35704,
+      "close_contact_rate": 0.930427963253417,
+      "dodge_used": 111,
+      "dodge_evade": 2753,
+      "hits": 116744,
+      "blocks": 9538,
+      "parries": 5744,
+      "breaks": 9741,
+      "execs": 2206,
+      "skills": 61271
+     },
+     "agg": {
+      "hits": 116744,
+      "blocks": 9538,
+      "dodges": 2753,
+      "parries": 5744,
+      "breaks": 9741,
+      "execs": 2206,
+      "ults": 1655,
+      "whiffs": 0,
+      "counters": 1124,
+      "skills": 61271,
+      "a_dmg": 6223991.706516123,
+      "b_dmg": 4373410.40449369,
+      "frames": 12981754,
+      "close_frames": 1407928,
+      "atk_inst": 162710,
+      "whiff_geo": 33234,
+      "whiff_dodge": 2753,
+      "contacts": 135356,
+      "edge_hits": 263,
+      "rear_contacts": 1,
+      "ang_sum": 1182.0255524847023,
+      "rear_inst": 14,
+      "rear_inst_hit": 2,
+      "close_contacts": 33220,
+      "close_atk_inst": 35704,
+      "dodge_used": 111,
+      "backstab_hits": 0,
+      "first_close": 42,
+      "first_dist": 932995.6707047977
+     },
+     "first": {
+      "close_n": 42,
+      "far_n": 5957,
+      "close_share": 0.007001166861143524,
+      "close_win_rate": 0.2619047619047619,
+      "far_win_rate": 0.6644284035588384
+     },
+     "label": "halfArc=30°",
+     "geo": {
+      "mode": "3d",
+      "halfArc_deg": 30,
+      "angleFalloff": 0.35,
+      "backstabMul": 1,
+      "backstabRef": "rear",
+      "turnIdle": 0.1,
+      "turnAttack": 0.03,
+      "turnDodge": 0,
+      "dodgeDirs": 2
+     },
+     "seconds": 178.7
+    },
+    {
+     "n_per_cell": 500,
+     "games": 6000,
+     "mean_win_rate": 0.5801666666666667,
+     "mean_win_rate_dec": 0.6250178045147303,
+     "spread_pp": 53.06666666666666,
+     "ttk_dec_s": 21.799385381063743,
+     "ttk_all_s": 37.73011944444444,
+     "draw_rate": 0.0735,
+     "avg_hero": {
+      "zhirui": {
+       "name": "执锐",
+       "win_rate": 0.45533333333333337,
+       "win_rate_dec": 0.48667178780815146
+      },
+      "zhongfeng": {
+       "name": "重锋",
+       "win_rate": 0.6053333333333334,
+       "win_rate_dec": 0.6502826252631584
+      },
+      "yingsuo": {
+       "name": "影梭",
+       "win_rate": 0.3646666666666667,
+       "win_rate_dec": 0.3775396655251204
+      },
+      "changce": {
+       "name": "长策",
+       "win_rate": 0.8953333333333333,
+       "win_rate_dec": 0.9855771394624911
+      }
+     },
+     "pairs": {
+      "zhirui>zhongfeng": {
+       "win_rate": 0.512,
+       "win_rate_dec": 0.5289256198347108,
+       "draw_rate": 0.03200000000000003,
+       "ttk_dec_s": 28.491769972451788,
+       "ttk_all_s": 27.580033333333333
+      },
+      "zhirui>yingsuo": {
+       "win_rate": 0.644,
+       "win_rate_dec": 0.688034188034188,
+       "draw_rate": 0.06399999999999995,
+       "ttk_dec_s": 37.71018518518519,
+       "ttk_all_s": 35.296733333333336
+      },
+      "zhirui>changce": {
+       "win_rate": 0.21,
+       "win_rate_dec": 0.24305555555555555,
+       "draw_rate": 0.136,
+       "ttk_dec_s": 61.56859567901235,
+       "ttk_all_s": 53.19526666666666
+      },
+      "zhongfeng>zhirui": {
+       "win_rate": 0.74,
+       "win_rate_dec": 0.7889125799573561,
+       "draw_rate": 0.062000000000000055,
+       "ttk_dec_s": 37.65849324804549,
+       "ttk_all_s": 35.32366666666667
+      },
+      "zhongfeng>yingsuo": {
+       "win_rate": 0.854,
+       "win_rate_dec": 0.9085106382978724,
+       "draw_rate": 0.06000000000000005,
+       "ttk_dec_s": 35.32989361702128,
+       "ttk_all_s": 33.2101
+      },
+      "zhongfeng>changce": {
+       "win_rate": 0.222,
+       "win_rate_dec": 0.2534246575342466,
+       "draw_rate": 0.124,
+       "ttk_dec_s": 56.64219939117199,
+       "ttk_all_s": 49.618566666666666
+      },
+      "yingsuo>zhirui": {
+       "win_rate": 0.478,
+       "win_rate_dec": 0.4847870182555781,
+       "draw_rate": 0.014000000000000012,
+       "ttk_dec_s": 24.70551048005409,
+       "ttk_all_s": 24.35963333333333
+      },
+      "yingsuo>zhongfeng": {
+       "win_rate": 0.386,
+       "win_rate_dec": 0.39227642276422764,
+       "draw_rate": 0.016000000000000014,
+       "ttk_dec_s": 24.059349593495934,
+       "ttk_all_s": 23.6744
+      },
+      "yingsuo>changce": {
+       "win_rate": 0.23,
+       "win_rate_dec": 0.25555555555555554,
+       "draw_rate": 0.09999999999999998,
+       "ttk_dec_s": 51.0484074074074,
+       "ttk_all_s": 45.94356666666667
+      },
+      "changce>zhirui": {
+       "win_rate": 0.908,
+       "win_rate_dec": 0.980561555075594,
+       "draw_rate": 0.07399999999999995,
+       "ttk_dec_s": 40.23099352051836,
+       "ttk_all_s": 37.2539
+      },
+      "changce>zhongfeng": {
+       "win_rate": 0.858,
+       "win_rate_dec": 0.9953596287703016,
+       "draw_rate": 0.138,
+       "ttk_dec_s": 57.788089713843775,
+       "ttk_all_s": 49.81333333333334
+      },
+      "changce>yingsuo": {
+       "win_rate": 0.92,
+       "win_rate_dec": 0.9808102345415778,
+       "draw_rate": 0.062000000000000055,
+       "ttk_dec_s": 39.97039800995025,
+       "ttk_all_s": 37.49223333333334
+      }
+     },
+     "metrics": {
+      "atk_inst": 161426,
+      "contacts": 133168,
+      "whiff_rate": 0.21004051391969075,
+      "whiff_dodge_rate": 0.016676371836011547,
+      "contact_rate": 0.8249476540334271,
+      "edge_rate": 0.0006382914814369819,
+      "rear_share": 0.000022527934638952302,
+      "rear_inst": 14,
+      "rear_conv": 0.35714285714285715,
+      "backstab_hits": 0,
+      "arc_backstab": 0,
+      "mean_angle_deg": 0.5324569332137826,
+      "close_frame_share": 0.10120753070620046,
+      "close_atk_inst": 34792,
+      "close_contact_rate": 0.9364509082547712,
+      "dodge_used": 99,
+      "dodge_evade": 2692,
+      "hits": 114994,
+      "blocks": 9185,
+      "parries": 5538,
+      "breaks": 9732,
+      "execs": 2333,
+      "skills": 61797
+     },
+     "agg": {
+      "hits": 114994,
+      "blocks": 9185,
+      "dodges": 2692,
+      "parries": 5538,
+      "breaks": 9732,
+      "execs": 2333,
+      "ults": 1713,
+      "whiffs": 0,
+      "counters": 1118,
+      "skills": 61797,
+      "a_dmg": 6175635.871736504,
+      "b_dmg": 4358485.068354161,
+      "frames": 13582843,
+      "close_frames": 1374686,
+      "atk_inst": 161426,
+      "whiff_geo": 33906,
+      "whiff_dodge": 2692,
+      "contacts": 133168,
+      "edge_hits": 85,
+      "rear_contacts": 3,
+      "ang_sum": 1237.5470843541452,
+      "rear_inst": 14,
+      "rear_inst_hit": 5,
+      "close_contacts": 32581,
+      "close_atk_inst": 34792,
+      "dodge_used": 99,
+      "backstab_hits": 0,
+      "first_close": 41,
+      "first_dist": 932241.9694456967
+     },
+     "first": {
+      "close_n": 41,
+      "far_n": 5958,
+      "close_share": 0.006834472412068678,
+      "close_win_rate": 0.34146341463414637,
+      "far_win_rate": 0.6438402148371937
+     },
+     "label": "halfArc=45°",
+     "geo": {
+      "mode": "3d",
+      "halfArc_deg": 45,
+      "angleFalloff": 0.35,
+      "backstabMul": 1,
+      "backstabRef": "rear",
+      "turnIdle": 0.1,
+      "turnAttack": 0.03,
+      "turnDodge": 0,
+      "dodgeDirs": 2
+     },
+     "seconds": 189.8
+    },
+    {
+     "n_per_cell": 500,
+     "games": 6000,
+     "mean_win_rate": 0.5938333333333334,
+     "mean_win_rate_dec": 0.632788640666462,
+     "spread_pp": 52,
+     "ttk_dec_s": 21.925128843078017,
+     "ttk_all_s": 35.33775277777777,
+     "draw_rate": 0.06216666666666667,
+     "avg_hero": {
+      "zhirui": {
+       "name": "执锐",
+       "win_rate": 0.4606666666666667,
+       "win_rate_dec": 0.48309557499975936
+      },
+      "zhongfeng": {
+       "name": "重锋",
+       "win_rate": 0.632,
+       "win_rate_dec": 0.6640119948671509
+      },
+      "yingsuo": {
+       "name": "影梭",
+       "win_rate": 0.38133333333333336,
+       "win_rate_dec": 0.39557663071672305
+      },
+      "changce": {
+       "name": "长策",
+       "win_rate": 0.9013333333333334,
+       "win_rate_dec": 0.988470362082215
+      }
+     },
+     "pairs": {
+      "zhirui>zhongfeng": {
+       "win_rate": 0.518,
+       "win_rate_dec": 0.534020618556701,
+       "draw_rate": 0.030000000000000027,
+       "ttk_dec_s": 27.56725085910653,
+       "ttk_all_s": 26.740233333333332
+      },
+      "zhirui>yingsuo": {
+       "win_rate": 0.666,
+       "win_rate_dec": 0.6995798319327731,
+       "draw_rate": 0.04800000000000004,
+       "ttk_dec_s": 34.07447478991597,
+       "ttk_all_s": 32.438900000000004
+      },
+      "zhirui>changce": {
+       "win_rate": 0.198,
+       "win_rate_dec": 0.21568627450980393,
+       "draw_rate": 0.08199999999999996,
+       "ttk_dec_s": 45.23376906318083,
+       "ttk_all_s": 41.5246
+      },
+      "zhongfeng>zhirui": {
+       "win_rate": 0.786,
+       "win_rate_dec": 0.8273684210526315,
+       "draw_rate": 0.050000000000000044,
+       "ttk_dec_s": 34.158421052631574,
+       "ttk_all_s": 32.4505
+      },
+      "zhongfeng>yingsuo": {
+       "win_rate": 0.906,
+       "win_rate_dec": 0.9301848049281314,
+       "draw_rate": 0.026000000000000023,
+       "ttk_dec_s": 26.569164955509923,
+       "ttk_all_s": 25.87836666666667
+      },
+      "zhongfeng>changce": {
+       "win_rate": 0.204,
+       "win_rate_dec": 0.23448275862068965,
+       "draw_rate": 0.13,
+       "ttk_dec_s": 58.573716475095786,
+       "ttk_all_s": 50.95913333333333
+      },
+      "yingsuo>zhirui": {
+       "win_rate": 0.492,
+       "win_rate_dec": 0.5072164948453608,
+       "draw_rate": 0.030000000000000027,
+       "ttk_dec_s": 29.131993127147766,
+       "ttk_all_s": 28.258033333333334
+      },
+      "yingsuo>zhongfeng": {
+       "win_rate": 0.372,
+       "win_rate_dec": 0.3803680981595092,
+       "draw_rate": 0.02200000000000002,
+       "ttk_dec_s": 25.04120654396728,
+       "ttk_all_s": 24.490299999999998
+      },
+      "yingsuo>changce": {
+       "win_rate": 0.28,
+       "win_rate_dec": 0.29914529914529914,
+       "draw_rate": 0.06399999999999995,
+       "ttk_dec_s": 40.349287749287754,
+       "ttk_all_s": 37.766933333333334
+      },
+      "changce>zhirui": {
+       "win_rate": 0.914,
+       "win_rate_dec": 0.9934782608695653,
+       "draw_rate": 0.07999999999999996,
+       "ttk_dec_s": 42.459855072463775,
+       "ttk_all_s": 39.06306666666667
+      },
+      "changce>zhongfeng": {
+       "win_rate": 0.866,
+       "win_rate_dec": 0.9931192660550459,
+       "draw_rate": 0.128,
+       "ttk_dec_s": 55.315328746177364,
+       "ttk_all_s": 48.234966666666665
+      },
+      "changce>yingsuo": {
+       "win_rate": 0.924,
+       "win_rate_dec": 0.9788135593220338,
+       "draw_rate": 0.05600000000000005,
+       "ttk_dec_s": 38.398305084745765,
+       "ttk_all_s": 36.248000000000005
+      }
+     },
+     "metrics": {
+      "atk_inst": 159815,
+      "contacts": 134099,
+      "whiff_rate": 0.1973406751556487,
+      "whiff_dodge_rate": 0.016631730438319305,
+      "contact_rate": 0.8390889465944998,
+      "edge_rate": 0.0003355729722071007,
+      "rear_share": 0.000007457177160157794,
+      "rear_inst": 21,
+      "rear_conv": 0.14285714285714285,
+      "backstab_hits": 0,
+      "arc_backstab": 0,
+      "mean_angle_deg": 0.5758306172248272,
+      "close_frame_share": 0.10993876473469395,
+      "close_atk_inst": 35342,
+      "close_contact_rate": 0.9337332352441854,
+      "dodge_used": 113,
+      "dodge_evade": 2658,
+      "hits": 115773,
+      "blocks": 9220,
+      "parries": 5720,
+      "breaks": 9827,
+      "execs": 2312,
+      "skills": 59617
+     },
+     "agg": {
+      "hits": 115773,
+      "blocks": 9220,
+      "dodges": 2658,
+      "parries": 5720,
+      "breaks": 9827,
+      "execs": 2312,
+      "ults": 1665,
+      "whiffs": 0,
+      "counters": 1074,
+      "skills": 59617,
+      "a_dmg": 6207503.254536796,
+      "b_dmg": 4347327.405390248,
+      "frames": 12721591,
+      "close_frames": 1398596,
+      "atk_inst": 159815,
+      "whiff_geo": 31538,
+      "whiff_dodge": 2658,
+      "contacts": 134099,
+      "edge_hits": 45,
+      "rear_contacts": 1,
+      "ang_sum": 1347.7137512650627,
+      "rear_inst": 21,
+      "rear_inst_hit": 3,
+      "close_contacts": 33000,
+      "close_atk_inst": 35342,
+      "dodge_used": 113,
+      "backstab_hits": 0,
+      "first_close": 49,
+      "first_dist": 936454.5732867935
+     },
+     "first": {
+      "close_n": 49,
+      "far_n": 5951,
+      "close_share": 0.008166666666666666,
+      "close_win_rate": 0.4489795918367347,
+      "far_win_rate": 0.6612334061502269
+     },
+     "label": "halfArc=60°",
+     "geo": {
+      "mode": "3d",
+      "halfArc_deg": 60,
+      "angleFalloff": 0.35,
+      "backstabMul": 1,
+      "backstabRef": "rear",
+      "turnIdle": 0.1,
+      "turnAttack": 0.03,
+      "turnDodge": 0,
+      "dodgeDirs": 2
+     },
+     "seconds": 176.1
+    },
+    {
+     "n_per_cell": 500,
+     "games": 6000,
+     "mean_win_rate": 0.5883333333333334,
+     "mean_win_rate_dec": 0.6307200644617712,
+     "spread_pp": 55.39999999999999,
+     "ttk_dec_s": 21.849237005245588,
+     "ttk_all_s": 36.612661111111116,
+     "draw_rate": 0.068,
+     "avg_hero": {
+      "zhirui": {
+       "name": "执锐",
+       "win_rate": 0.47666666666666674,
+       "win_rate_dec": 0.503301191978857
+      },
+      "zhongfeng": {
+       "name": "重锋",
+       "win_rate": 0.6133333333333334,
+       "win_rate_dec": 0.6535760567792707
+      },
+      "yingsuo": {
+       "name": "影梭",
+       "win_rate": 0.3546666666666667,
+       "win_rate_dec": 0.37252346806042763
+      },
+      "changce": {
+       "name": "长策",
+       "win_rate": 0.9086666666666666,
+       "win_rate_dec": 0.9934795410285294
+      }
+     },
+     "pairs": {
+      "zhirui>zhongfeng": {
+       "win_rate": 0.546,
+       "win_rate_dec": 0.558282208588957,
+       "draw_rate": 0.02200000000000002,
+       "ttk_dec_s": 25.957259713701433,
+       "ttk_all_s": 25.3862
+      },
+      "zhirui>yingsuo": {
+       "win_rate": 0.668,
+       "win_rate_dec": 0.7121535181236673,
+       "draw_rate": 0.062000000000000055,
+       "ttk_dec_s": 37.88287135749822,
+       "ttk_all_s": 35.53413333333333
+      },
+      "zhirui>changce": {
+       "win_rate": 0.216,
+       "win_rate_dec": 0.2394678492239468,
+       "draw_rate": 0.09799999999999998,
+       "ttk_dec_s": 49.733333333333334,
+       "ttk_all_s": 44.85946666666667
+      },
+      "zhongfeng>zhirui": {
+       "win_rate": 0.74,
+       "win_rate_dec": 0.8026030368763557,
+       "draw_rate": 0.07799999999999996,
+       "ttk_dec_s": 41.784634851771514,
+       "ttk_all_s": 38.52543333333333
+      },
+      "zhongfeng>yingsuo": {
+       "win_rate": 0.874,
+       "win_rate_dec": 0.9047619047619048,
+       "draw_rate": 0.03400000000000003,
+       "ttk_dec_s": 29.251621808143547,
+       "ttk_all_s": 28.257066666666667
+      },
+      "zhongfeng>changce": {
+       "win_rate": 0.226,
+       "win_rate_dec": 0.2533632286995516,
+       "draw_rate": 0.10799999999999998,
+       "ttk_dec_s": 52.39618834080717,
+       "ttk_all_s": 46.7374
+      },
+      "yingsuo>zhirui": {
+       "win_rate": 0.44,
+       "win_rate_dec": 0.45454545454545453,
+       "draw_rate": 0.03200000000000003,
+       "ttk_dec_s": 29.531439393939397,
+       "ttk_all_s": 28.586433333333332
+      },
+      "yingsuo>zhongfeng": {
+       "win_rate": 0.386,
+       "win_rate_dec": 0.40376569037656906,
+       "draw_rate": 0.04400000000000004,
+       "ttk_dec_s": 30.56419107391911,
+       "ttk_all_s": 29.219366666666666
+      },
+      "yingsuo>changce": {
+       "win_rate": 0.238,
+       "win_rate_dec": 0.25925925925925924,
+       "draw_rate": 0.08199999999999996,
+       "ttk_dec_s": 45.98907044299201,
+       "ttk_all_s": 42.21796666666667
+      },
+      "changce>zhirui": {
+       "win_rate": 0.934,
+       "win_rate_dec": 0.9978632478632479,
+       "draw_rate": 0.06399999999999995,
+       "ttk_dec_s": 37.385541310541306,
+       "ttk_all_s": 34.99286666666667
+      },
+      "changce>zhongfeng": {
+       "win_rate": 0.87,
+       "win_rate_dec": 0.9954233409610984,
+       "draw_rate": 0.126,
+       "ttk_dec_s": 54.22090007627765,
+       "ttk_all_s": 47.389066666666665
+      },
+      "changce>yingsuo": {
+       "win_rate": 0.922,
+       "win_rate_dec": 0.987152034261242,
+       "draw_rate": 0.06599999999999995,
+       "ttk_dec_s": 40.30678087080657,
+       "ttk_all_s": 37.64653333333333
+      }
+     },
+     "metrics": {
+      "atk_inst": 161295,
+      "contacts": 133354,
+      "whiff_rate": 0.20876654577017267,
+      "whiff_dodge_rate": 0.016894510059208282,
+      "contact_rate": 0.8267708236461143,
+      "edge_rate": 0.00015747559128335108,
+      "rear_share": 0.0000074988376801595755,
+      "rear_inst": 13,
+      "rear_conv": 0.15384615384615385,
+      "backstab_hits": 0,
+      "arc_backstab": 0,
+      "mean_angle_deg": 0.5613990502817804,
+      "close_frame_share": 0.10694205814351714,
+      "close_atk_inst": 35658,
+      "close_contact_rate": 0.9349374614392282,
+      "dodge_used": 108,
+      "dodge_evade": 2725,
+      "hits": 115242,
+      "blocks": 9240,
+      "parries": 5576,
+      "breaks": 9846,
+      "execs": 2184,
+      "skills": 61765
+     },
+     "agg": {
+      "hits": 115242,
+      "blocks": 9240,
+      "dodges": 2725,
+      "parries": 5576,
+      "breaks": 9846,
+      "execs": 2184,
+      "ults": 1702,
+      "whiffs": 0,
+      "counters": 1112,
+      "skills": 61765,
+      "a_dmg": 6179015.502861936,
+      "b_dmg": 4327595.499060665,
+      "frames": 13180558,
+      "close_frames": 1409556,
+      "atk_inst": 161295,
+      "whiff_geo": 33673,
+      "whiff_dodge": 2725,
+      "contacts": 133354,
+      "edge_hits": 21,
+      "rear_contacts": 1,
+      "ang_sum": 1306.6374100762987,
+      "rear_inst": 13,
+      "rear_inst_hit": 2,
+      "close_contacts": 33338,
+      "close_atk_inst": 35658,
+      "dodge_used": 108,
+      "backstab_hits": 0,
+      "first_close": 48,
+      "first_dist": 937018.4126051768
+     },
+     "first": {
+      "close_n": 48,
+      "far_n": 5951,
+      "close_share": 0.008001333555592599,
+      "close_win_rate": 0.375,
+      "far_win_rate": 0.662241640060494
+     },
+     "label": "halfArc=75°",
+     "geo": {
+      "mode": "3d",
+      "halfArc_deg": 75,
+      "angleFalloff": 0.35,
+      "backstabMul": 1,
+      "backstabRef": "rear",
+      "turnIdle": 0.1,
+      "turnAttack": 0.03,
+      "turnDodge": 0,
+      "dodgeDirs": 2
+     },
+     "seconds": 183.3
+    },
+    {
+     "n_per_cell": 500,
+     "games": 6000,
+     "mean_win_rate": 0.5873333333333333,
+     "mean_win_rate_dec": 0.6243758916119818,
+     "spread_pp": 56.2,
+     "ttk_dec_s": 22.08428512127142,
+     "ttk_all_s": 35.67333055555556,
+     "draw_rate": 0.06316666666666666,
+     "avg_hero": {
+      "zhirui": {
+       "name": "执锐",
+       "win_rate": 0.45733333333333337,
+       "win_rate_dec": 0.4816231626644408
+      },
+      "zhongfeng": {
+       "name": "重锋",
+       "win_rate": 0.614,
+       "win_rate_dec": 0.6547826178938582
+      },
+      "yingsuo": {
+       "name": "影梭",
+       "win_rate": 0.35799999999999993,
+       "win_rate_dec": 0.37243264250307706
+      },
+      "changce": {
+       "name": "长策",
+       "win_rate": 0.9199999999999999,
+       "win_rate_dec": 0.9886651433865513
+      }
+     },
+     "pairs": {
+      "zhirui>zhongfeng": {
+       "win_rate": 0.5,
+       "win_rate_dec": 0.5122950819672131,
+       "draw_rate": 0.02400000000000002,
+       "ttk_dec_s": 26.251161202185795,
+       "ttk_all_s": 25.621133333333333
+      },
+      "zhirui>yingsuo": {
+       "win_rate": 0.672,
+       "win_rate_dec": 0.7088607594936709,
+       "draw_rate": 0.052000000000000046,
+       "ttk_dec_s": 35.894760900140646,
+       "ttk_all_s": 34.02823333333333
+      },
+      "zhirui>changce": {
+       "win_rate": 0.2,
+       "win_rate_dec": 0.22371364653243847,
+       "draw_rate": 0.10599999999999998,
+       "ttk_dec_s": 52.66282624906786,
+       "ttk_all_s": 47.08056666666666
+      },
+      "zhongfeng>zhirui": {
+       "win_rate": 0.76,
+       "win_rate_dec": 0.8102345415778252,
+       "draw_rate": 0.062000000000000055,
+       "ttk_dec_s": 38.12213930348259,
+       "ttk_all_s": 35.75856666666667
+      },
+      "zhongfeng>yingsuo": {
+       "win_rate": 0.854,
+       "win_rate_dec": 0.8914405010438413,
+       "draw_rate": 0.04200000000000004,
+       "ttk_dec_s": 31.16409185803758,
+       "ttk_all_s": 29.8552
+      },
+      "zhongfeng>changce": {
+       "win_rate": 0.228,
+       "win_rate_dec": 0.2626728110599078,
+       "draw_rate": 0.132,
+       "ttk_dec_s": 58.33694316436252,
+       "ttk_all_s": 50.63646666666667
+      },
+      "yingsuo>zhirui": {
+       "win_rate": 0.486,
+       "win_rate_dec": 0.49490835030549896,
+       "draw_rate": 0.018000000000000016,
+       "ttk_dec_s": 26.43221317040054,
+       "ttk_all_s": 25.956433333333333
+      },
+      "yingsuo>zhongfeng": {
+       "win_rate": 0.344,
+       "win_rate_dec": 0.36058700209643607,
+       "draw_rate": 0.04600000000000004,
+       "ttk_dec_s": 31.19053109713487,
+       "ttk_all_s": 29.755766666666666
+      },
+      "yingsuo>changce": {
+       "win_rate": 0.244,
+       "win_rate_dec": 0.26180257510729615,
+       "draw_rate": 0.06799999999999995,
+       "ttk_dec_s": 42.07460658082975,
+       "ttk_all_s": 39.21353333333333
+      },
+      "changce>zhirui": {
+       "win_rate": 0.94,
+       "win_rate_dec": 0.9936575052854123,
+       "draw_rate": 0.05400000000000005,
+       "ttk_dec_s": 34.609302325581396,
+       "ttk_all_s": 32.7404
+      },
+      "changce>zhongfeng": {
+       "win_rate": 0.884,
+       "win_rate_dec": 0.9932584269662922,
+       "draw_rate": 0.10999999999999999,
+       "ttk_dec_s": 49.283782771535584,
+       "ttk_all_s": 43.862566666666666
+      },
+      "changce>yingsuo": {
+       "win_rate": 0.936,
+       "win_rate_dec": 0.9790794979079498,
+       "draw_rate": 0.04400000000000004,
+       "ttk_dec_s": 35.116213389121334,
+       "ttk_all_s": 33.5711
+      }
+     },
+     "metrics": {
+      "atk_inst": 161270,
+      "contacts": 135246,
+      "whiff_rate": 0.198462206237986,
+      "whiff_dodge_rate": 0.016915731382154152,
+      "contact_rate": 0.8386308674893036,
+      "edge_rate": 0.0002439998225455836,
+      "rear_share": 0.000014787868033065673,
+      "rear_inst": 18,
+      "rear_conv": 0.2777777777777778,
+      "backstab_hits": 0,
+      "arc_backstab": 0,
+      "mean_angle_deg": 0.5765014212162556,
+      "close_frame_share": 0.1093597855042504,
+      "close_atk_inst": 35540,
+      "close_contact_rate": 0.9353685987619583,
+      "dodge_used": 119,
+      "dodge_evade": 2728,
+      "hits": 116796,
+      "blocks": 9414,
+      "parries": 5669,
+      "breaks": 9737,
+      "execs": 2223,
+      "skills": 60504
+     },
+     "agg": {
+      "hits": 116796,
+      "blocks": 9414,
+      "dodges": 2728,
+      "parries": 5669,
+      "breaks": 9737,
+      "execs": 2223,
+      "ults": 1733,
+      "whiffs": 0,
+      "counters": 1144,
+      "skills": 60504,
+      "a_dmg": 6240997.281423703,
+      "b_dmg": 4371990.03584182,
+      "frames": 12842399,
+      "close_frames": 1404442,
+      "atk_inst": 161270,
+      "whiff_geo": 32006,
+      "whiff_dodge": 2728,
+      "contacts": 135246,
+      "edge_hits": 33,
+      "rear_contacts": 2,
+      "ang_sum": 1360.8246868516896,
+      "rear_inst": 18,
+      "rear_inst_hit": 5,
+      "close_contacts": 33243,
+      "close_atk_inst": 35540,
+      "dodge_used": 119,
+      "backstab_hits": 0,
+      "first_close": 45,
+      "first_dist": 933942.2426053124
+     },
+     "first": {
+      "close_n": 45,
+      "far_n": 5953,
+      "close_share": 0.007502500833611204,
+      "close_win_rate": 0.3333333333333333,
+      "far_win_rate": 0.6640349403662019
+     },
+     "label": "halfArc=90°",
+     "geo": {
+      "mode": "3d",
+      "halfArc_deg": 90,
+      "angleFalloff": 0.35,
+      "backstabMul": 1,
+      "backstabRef": "rear",
+      "turnIdle": 0.1,
+      "turnAttack": 0.03,
+      "turnDodge": 0,
+      "dodgeDirs": 2
+     },
+     "seconds": 173.8
+    }
+   ]
+  }
+ }
+}
